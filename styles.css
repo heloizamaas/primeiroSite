@@ -1,4 +1,24 @@
 body {
-    background-color: cornflowerblue;
-    color: ;
+    background-color: cornflowerblue(244, 204, 103);
+    color: black(143, 103, 4);
+    font-family: sans-serif;
+    display:flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.foto-perfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.container{
+    max-width: 600px;
+    padding: 20xp;
+    text-align: center;
+}
+
+.perfil h1{
+font-size: 1.5rem;
+margin-bottom: 5xp;
 }
