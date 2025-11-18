@@ -1,6 +1,6 @@
 body {
-    background-color: cornflowerblue(244, 204, 103);
-    color: black(143, 103, 4);
+    background-color: rgb(103, 169, 244);
+    color: rgb(243, 244, 245);
     font-family: sans-serif;
     display:flex;
     justify-content: center;
@@ -10,6 +10,8 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid rgb(127, 243, 235);
 }
 
 .container{
@@ -21,4 +23,34 @@ body {
 .perfil h1{
 font-size: 1.5rem;
 margin-bottom: 5xp;
+}
+
+.link{
+    margin-top: 30xp;
+    display: flex;
+    flex-direction: column;
+    gap: 15xp;
+}
+.link-botao{
+    background-color: black;
+    color: aliceblue;
+    padding: 15xp;
+    border-radius: 8xp;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s;
+    
+}
+.linkk-botao i{
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.link-botao:hover{
+    background-color: rgb(85, 116, 172);
+    transform: translateY(-2xp);
 }
