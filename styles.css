@@ -1,56 +1,87 @@
+/* Importante: Adicionar uma fonte moderna */
+
+
+/* --- 1. RESET E ESTILO GERAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* O Box Model em ação: padding e borda não quebram o layout! */
+}
+
 body {
-    background-color: rgb(103, 169, 244);
-    color: rgb(243, 244, 245);
-    font-family: sans-serif;
-    display:flex;
-    justify-content: center;
-    min-height: 100vh;
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    font-family: 'Roboto', sans-serif;
+   
+    /* Ativa o Flexbox no Body para CENTRALIZAR O CONTAINER */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    min-height: 100vh; /* Garante que ocupe a altura total da tela */
 }
-.foto-perfil{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+
+/* --- 2. CONTAINER E PERFIL --- */
+.container {
+    width: 90%; /* Largura em celulares */
+    max-width: 600px; /* Limite em telas grandes */
+    padding: 20px;
+    text-align: center; /* Centraliza o texto e a foto */
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Transforma a foto em um CÍRCULO */
     margin-bottom: 10px;
-    border: 3px solid rgb(127, 243, 235);
+    border: 3px solid #00c6ff; /* Uma borda de destaque */
 }
 
-.container{
-    max-width: 600px;
-    padding: 20xp;
-    text-align: center;
+.perfil h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
 }
 
-.perfil h1{
-font-size: 1.5rem;
-margin-bottom: 5xp;
+/* --- 3. ESTILO DOS BOTÕES (LINKS) --- */
+
+.links {
+    margin-top: 30px; /* Espaço entre o perfil e os botões */
+    display: flex; /* Transforma em Flex Container */
+    flex-direction: column; /* Faz os botões ficarem um embaixo do outro (coluna) */
+    gap: 15px; /* Espaço entre os botões */
 }
 
-.link{
-    margin-top: 30xp;
-    display: flex;
-    flex-direction: column;
-    gap: 15xp;
-}
-.link-botao{
-    background-color: black;
-    color: aliceblue;
-    padding: 15xp;
-    border-radius: 8xp;
-    text-decoration: none;
+.link-botao {
+    /* Estilo do Botão */
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none; /* Remove o sublinhado do link */
     font-weight: bold;
-    display: block;
+    display: block; /* Faz o link ocupar 100% da largura, como um botão */
+   
+    /* Centraliza o ícone e o texto */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s, transform 0.3s;
-    
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+   
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
 }
-.linkk-botao i{
+
+/* Espaço para o Ícone */
+.link-botao i {
     margin-right: 10px;
     font-size: 1.2rem;
 }
 
-.link-botao:hover{
-    background-color: rgb(85, 116, 172);
-    transform: translateY(-2xp);
+/* --- 4. CORES ESPECÍFICAS E HOVER --- */
+
+.link-botao:hover {
+    background-color: #00c6ff; /* Efeito ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação sutil */
 }
+
+/* Cores das Redes Sociais */
+.instagram { background: #E4405F; }
+.linkedin { background: #0077B5; }
+.github { background: #6e5494; }
+.whatsapp { background: #25D366; }
